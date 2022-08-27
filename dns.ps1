@@ -1,0 +1,1 @@
+dnscmd /zoneexport [[domain]] [[filename]]
