@@ -1,9 +1,11 @@
 #!/bin/bash
 echo "tmp"
 read STR
-awk -F: '$7 ~ /(\/.*sh)/ { print $1 }' /etc/passwd > users
-sed -s 's/$/,/' > usersetup.csv
+set +o history
 for user in $(awk -F: '$7 ~ /(\/.*sh)/ { print $1 }' /etc/passwd)
 do
     echo "${user}:${STR}${user}" | chpasswd
+    echo asdasdasd | chpasswd
 done
+set -o history
+echo good
