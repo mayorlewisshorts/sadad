@@ -1,0 +1,12 @@
+ssh: https://gist.github.com/dimaskiddo/18c1c4ca71a73828c57189aba5ec5d8d
+nofunc: 
+    exec
+    passthru
+    shell_exec
+    system,
+    proc_open
+    popen
+    curl_exec
+    curl_multi_exec
+    parse_ini_file
+    show_source
